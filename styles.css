@@ -1,0 +1,41 @@
+/* Apply focus effect using a list selector in the correct order */
+input:focus, 
+textarea:focus {
+  border-color: blue;
+}
+
+/* Apply invalid input styling using a list selector */
+input:invalid, 
+select:invalid, 
+textarea:invalid {
+  border-color: red;
+}
+
+/* Apply valid input styling using a list selector */
+input:valid, 
+select:valid, 
+textarea:valid {
+  border-color: green;
+}
+
+/* Change background color when the button is hovered */
+button:hover {
+  background-color: yellow;
+}
+
+/* Style selected radio buttons */
+.radio-group input[type="radio"]:checked {
+  border: 2px solid orange; /* Add a visible border */
+  background-color: gray;
+  box-shadow: 0 0 5px orange; /* Add a glow effect */
+}
+
+/* Change label text color when the radio button is selected */
+.radio-group input[type="radio"]:checked + label {
+  color: magenta;
+}
+
+input:nth-child(1) {
+  border-radius: 0.6;
+}
+
