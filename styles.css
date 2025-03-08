@@ -1,3 +1,38 @@
+body {
+    font-size: 1.25em;
+}
+
+h1 {
+    font-family: Monaco, monospace;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 0 5px rgb(224, 221, 215);
+    margin: 2.5%;
+    padding: 2.5%;
+    border-radius: 10px;
+}
+
+input:not([type="radio"]), select, textarea {
+    margin-bottom: 1%;
+    width: 100%;
+    padding: 1.2%;
+    border-radius: 5px;
+}
+
+
+
+label {
+    color: black;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 1.5%;
+}
+
 /* Apply focus effect using a list selector in the correct order */
 input:focus, 
 textarea:focus {
@@ -8,7 +43,7 @@ textarea:focus {
 input:invalid, 
 select:invalid, 
 textarea:invalid {
-  border-color: red;
+  border-color: magenta;
 }
 
 /* Apply valid input styling using a list selector */
@@ -20,22 +55,40 @@ textarea:valid {
 
 /* Change background color when the button is hovered */
 button:hover {
-  background-color: yellow;
+  background-color: navy;
 }
 
 /* Style selected radio buttons */
 .radio-group input[type="radio"]:checked {
-  border: 2px solid orange; /* Add a visible border */
-  background-color: gray;
-  box-shadow: 0 0 5px orange; /* Add a glow effect */
+  border: 2px solid green; /* Add a visible border */
+  background-color: green;
+  box-shadow: 0 0 5px green; /* Add a glow effect */
 }
 
 /* Change label text color when the radio button is selected */
 .radio-group input[type="radio"]:checked + label {
-  color: magenta;
+  color: green;
 }
 
 input:nth-child(1) {
   border-radius: 0.6;
 }
 
+fieldset {
+    margin-bottom: 1%;
+}
+
+
+
+button {
+    font-size: 1.25em;
+    text-align: center;
+    width: 100%;
+    margin: 2% 2.5% 1% 0.5%;
+    background-color: green;
+    color: white;
+}
+
+input[type="radio"]:checked {
+    accent-color: green;
+}
